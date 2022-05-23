@@ -25,4 +25,3 @@ namespace AppAdmonQb.Components.VoluntaryContribution
         }
     }
 }
-}

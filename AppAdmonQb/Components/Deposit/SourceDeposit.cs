@@ -7,7 +7,7 @@ namespace AppAdmonQb.Components.Deposit
     {
         public dynamic List()
         {
-            var url = "http://localhost/app-admon-api/web/v1/movements/get-deposits";
+            var url = "https://ceprosaf-app-admon-api.azurewebsites.net/web/v1/movements/get-deposits";
             dynamic deposits = null;
 
             using (var httpClient = new HttpClient())

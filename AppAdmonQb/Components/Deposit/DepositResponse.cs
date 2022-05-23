@@ -6,7 +6,7 @@ namespace AppAdmonQb.Components.Deposit
     internal class DepositResponse
     {
         public List<Response> responseList = new List<Response>();
-        public dynamic depositList = null;
+        public dynamic depositList;
 
         public IMsgSetResponse responseMsgSet;
 

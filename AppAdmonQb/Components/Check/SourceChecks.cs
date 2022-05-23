@@ -7,7 +7,7 @@ namespace AppAdmonQb.Components.Check
     {
         public dynamic List()
         {
-            var url = "http://localhost/app-admon-api/web/v1/movements/get-checks";
+            var url = "https://ceprosaf-app-admon-api.azurewebsites.net/web/v1/movements/get-checks";
             dynamic checks = null;
 
             using (var httpClient = new HttpClient())
