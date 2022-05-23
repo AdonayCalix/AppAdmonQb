@@ -7,7 +7,7 @@ namespace AppAdmonQb.Components.VoluntaryContribution
     {
         public dynamic List()
         {
-            var url = "http://localhost/app-admon-api/web/v1/voluntary-contributions/get";
+            var url = "https://ceprosaf-app-admon-api.azurewebsites.net/web/v1/voluntary-contributions/get";
             dynamic voluntaryContributions = null;
 
             using (var httpClient = new HttpClient())

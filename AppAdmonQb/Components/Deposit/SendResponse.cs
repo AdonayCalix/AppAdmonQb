@@ -15,7 +15,7 @@ namespace AppAdmonQb.Components.Deposit
 
         public SendResponse Build()
         {
-            var url = "http://localhost/app-admon-api/web/v1/movements/store-response";
+            var url = "https://ceprosaf-app-admon-api.azurewebsites.net/web/v1/movements/store-response";
             dynamic checks = null;
 
             using (var httpClient = new HttpClient())
