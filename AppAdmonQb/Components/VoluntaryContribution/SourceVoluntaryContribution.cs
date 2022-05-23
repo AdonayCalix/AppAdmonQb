@@ -1,14 +1,14 @@
 ﻿using System.Net.Http.Headers;
 using Newtonsoft.Json;
 
-namespace AppAdmonQb.Components.Deposit
+namespace AppAdmonQb.Components.VoluntaryContribution
 {
-    internal class SourceDeposit
+    internal class SourceVoluntaryContribution
     {
         public dynamic List()
         {
-            var url = "http://localhost/app-admon-api/web/v1/movements/get-deposits";
-            dynamic deposits = null;
+            var url = "http://localhost/app-admon-api/web/v1/voluntary-contributions/get";
+            dynamic voluntaryContributions = null;
 
             using (var httpClient = new HttpClient())
             {
@@ -18,10 +18,11 @@ namespace AppAdmonQb.Components.Deposit
 
                 var result = response.Result.Content.ReadAsStringAsync().Result;
 
-                deposits = JsonConvert.DeserializeObject<dynamic>(result);
+                voluntaryContributions = JsonConvert.DeserializeObject<dynamic>(result);
             }
 
-            return deposits;
+            return voluntaryContributions;
         }
     }
+}
 }

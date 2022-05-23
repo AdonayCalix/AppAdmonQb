@@ -1,0 +1,15 @@
+﻿@page
+@model VoluntaryContributionModel
+@{
+    ViewData["Title"] = "Registro de Cheques";
+}
+<h1>@ViewData["Title"]</h1>
+
+@if(Model.HasError){
+    <p>@Model.MessageError</p>
+} else {
+    <strong><p>La operacion se realizo de forma exitosa, los detalles a continuacion</p></strong>
+    <strong><p>Movimientos correctos: @Model.QuantitySuccess</p></strong>
+    <strong><p>Movimientos con error: @Model.QuantityError</p></strong>    
+    <strong><p>Revisar la bitacora de registros de depositos en el QB en la plataforma administrativa</p></strong>    
+}
