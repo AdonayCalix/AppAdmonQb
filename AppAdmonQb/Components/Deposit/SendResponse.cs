@@ -15,13 +15,13 @@ namespace AppAdmonQb.Components.Deposit
 
         public SendResponse Build()
         {
-            var url = "https://ceprosaf-app-admon-api.azurewebsites.net/web/v1/movements/store-response";
+            var url = "url_api_here";
             dynamic checks = null;
 
             using (var httpClient = new HttpClient())
             {
                 httpClient.DefaultRequestHeaders.Authorization
-                          = new AuthenticationHeaderValue("Bearer", "LSBjtdL7eAWDCRMyAUswtuiCAYIDMKMX");
+                          = new AuthenticationHeaderValue("Bearer", "token_here");
                 var response = httpClient.PostAsJsonAsync(url, responseList);
 
                 var result = response.Result.Content.ReadAsStringAsync().Result;
