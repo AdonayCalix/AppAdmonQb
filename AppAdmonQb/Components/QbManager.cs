@@ -18,7 +18,7 @@ namespace AppAdmonQb.Components
 
         public QbManager OpenConnection()
         {
-            sessionManager.OpenConnection("", "CEPROSAF");
+            sessionManager.OpenConnection("", "NOMBRE ARCHIVO");
             connectionOpen = true;
             return this;
         }
